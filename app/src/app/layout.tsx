@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import React from "react";
 import "@/styles/font.css";
+import BrowserInfo from "@/components/BrowserInfo";
+import LocationInfo from "@/components/LocationInfo";
 
 export const metadata: Metadata = {
   title: "Atakan Akın | Full Stack Developer",
@@ -21,7 +23,13 @@ export default function RootLayout({
               href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Titillium+Web:wght@400&display=swap"
               rel="stylesheet"/>
       </head>
-      <body>
+      <body className="container mx-auto p-10 min-h-screen flex flex-col">
+      <div className="background rounded-4xl flex-1 p-5">
+            <div className={"flex align-center justify-between"}>
+                <BrowserInfo />
+                <LocationInfo />
+            </div>
+      </div>
       {children}
       </body>
       </html>
