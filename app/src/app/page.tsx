@@ -3,8 +3,8 @@ import React from 'react';
 
 const Home: React.FC = () =>  {
   return (
-      <div>
-
+      <div className={"flex items-center justify-center"}>
+        atakan
       </div>
   );
 }
