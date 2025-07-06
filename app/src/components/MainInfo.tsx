@@ -5,6 +5,7 @@ import BrowserInfo from "@/components/BrowserInfo";
 import LocationCountryInfo from "@/components/LocationCountryInfo";
 import axios from "axios";
 import LocalTimeCalculation from "@/components/LocalTimeCalculation";
+import TimeSpent from "@/components/TimeSpent";
 
 export interface ILocationInfo {
     ip: string;
@@ -44,8 +45,9 @@ const MainInfo = ({ children }: PropsWithChildren<{}>) => {
             </div>
             {children}
             <div className="flex justify-between">
-                <div className={"flex items-center justify-items-start"}>
+                <div className={"flex flex-col items-start justify-items-start"}>
                     <LocalTimeCalculation/>
+                    <TimeSpent/>
                 </div>
                 <LocationCountryInfo {...location}/>
             </div>

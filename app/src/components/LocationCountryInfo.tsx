@@ -5,7 +5,7 @@ import {ILocationInfo} from "@/components/MainInfo";
 const LocationCountryInfo = (props: ILocationInfo) => {
     return (
         <div>
-            <div>
+            <div className={"text-end"}>
                 <span className={"orbitronBold fs-14"}>{props.ip}</span>
                 <span className={"color-eff1c5 orbitron fs-14"}> ~ IP</span>
             </div>

@@ -5,9 +5,11 @@ const LocalTimeCalculation = () => {
     const [localTime, setLocalTime] = useState<string>("");
     useEffect(() => {
         const timer = setInterval(() => {
-            setLocalTime(new Date().toLocaleTimeString("tr-TR"));
-        },1000);
-
+            const now = new Date();
+            const h = now.getHours().toString().padStart(2, "0");
+            const m = now.getMinutes().toString().padStart(2, "0");
+            setLocalTime(`${h}:${m}`);
+        }, 1000);
         return () => clearInterval(timer);
     }, []);
     return (

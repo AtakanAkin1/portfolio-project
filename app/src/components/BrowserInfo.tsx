@@ -34,10 +34,10 @@ const BrowserInfo: React.FC = () => {
     return(
         <div>
             <div>
-                <span className={"orbitronBold fs-14"}>{userAgent.browser.name} {userAgent.browser.version}</span>
+                <span className={"orbitronBold fs-14"}>{userAgent.browser.name} v{userAgent.browser.version}</span>
                 <span className={"color-eff1c5 orbitron fs-14"}> ~ Browser</span>
             </div>
-            <div>
+            <div className={"text-end"}>
                 <span className={"orbitronBold fs-14"}>{userAgent.os.name}</span>
                 <span className={"color-eff1c5 orbitron fs-14"}> ~ OS</span>
             </div>

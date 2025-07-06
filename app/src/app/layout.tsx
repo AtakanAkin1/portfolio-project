@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "@/styles/globals.css";
 import React from "react";
 import "@/styles/font.css";
 import BrowserInfo from "@/components/BrowserInfo";
@@ -32,7 +32,6 @@ export default function RootLayout({
          </MainInfo>
       </div>
       </body>
-
       </html>
   );
 }
