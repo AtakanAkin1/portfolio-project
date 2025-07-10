@@ -6,11 +6,11 @@ import styles from '@/styles/homepage.module.css';
 const Home: React.FC = () =>  {
   return (
       <div className="flex flex-col items-center justify-start min-h-[40vh] w-full">
-          <div className="text-left">
+          <div className="sm:text-left text-center">
               <span className="orbitron fs-48 block">
                   Hi, I am
               </span>
-              <span className="orbitronBold fs-64 block pl-28">{/* padding left 7vh */}
+              <span className="orbitronBold fs-64 block sm:pl-28">{/* padding left 7vh */}
                   Atakan Akın
               </span>
               <div className={"flex items-center gap-5 mt-5"}>
