@@ -24,7 +24,7 @@ export default function RootLayout({
               rel="stylesheet"/>
           <title>Atakan Akın | Full Stack Developer</title>
       </head>
-      <body className="container mx-auto sm:p-10 p-2 min-h-screen flex flex-col">
+      <body className="mx-auto sm:p-10 p-2 min-h-screen flex flex-col">
       <main className="background rounded-4xl flex-1 sm:p-5 flex flex-col justify-between mb-2 mt-2">
           <MainInfo>
               {children}
