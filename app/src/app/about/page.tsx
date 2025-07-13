@@ -2,7 +2,7 @@ import React from 'react';
 
 const About:React.FC = () => {
     return (
-        <div className={"text-center -mt-16"}>
+        <div className={"text-center -mt-30"}>
             <span className={"orbitronBold fs-64 "}>About</span>
             <p className="orbitron max-w-6xl mx-auto fs-22 leading-relaxed color-eff1c5">
                 Hello, I am Atakan Akin.

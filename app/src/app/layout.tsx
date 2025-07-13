@@ -4,6 +4,8 @@ import React from "react";
 import "@/styles/font.css";
 import MainInfo from "@/components/MainInfo";
 import Navigation from "@/components/Navigation";
+import styles from "@/styles/homepage.module.css";
+import {ToastContainer} from "react-toastify";
 
 export const metadata: Metadata = {
   title: "Atakan Akın | Full Stack Developer",
@@ -27,8 +29,13 @@ export default function RootLayout({
       <body className="mx-auto sm:p-10 p-2 min-h-screen flex flex-col">
       <main className="background rounded-4xl flex-1 sm:p-5 flex flex-col justify-between mb-2 mt-2">
           <MainInfo>
+              <ToastContainer position="top-right" autoClose={3000} theme="dark" />
               {children}
           </MainInfo>
+          <div
+              className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none 
+              ${styles.backgroundPointer}`}
+          />
       </main>
       <nav
           className="absolute sm:bottom-7 bottom-23 left-1/2 transform -translate-x-1/2 bg-[#3D3D3D]
