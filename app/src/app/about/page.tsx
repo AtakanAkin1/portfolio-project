@@ -5,11 +5,10 @@ const About:React.FC = () => {
         <div className={"text-center -mt-30"}>
             <span className={"orbitronBold fs-64 "}>About</span>
             <p className="orbitron max-w-6xl mx-auto fs-22 leading-relaxed color-eff1c5">
-                Hello, I am Atakan Akin.
-                I graduated from the Department of information technologiesin high school and completed
-                my undergraduate education in Computer Programming at Afyon Kocatepe University.
-                I am currently working as a full-stack software developer.
-                In addition to .NET CORE, I have expertise in JavaScript, React.js, and Next.js.
+                Hello, I’m Atakan Akin — a passionate full-stack developer who loves turning ideas into scalable and elegant web solutions.
+                I began my journey by studying Information Technologies in high school and earned a degree in Computer Programming from Afyon Kocatepe University.
+                Currently, I specialize in building modern web applications using .NET Core, JavaScript, React.js, and Next.js.
+                I strive to create seamless digital experiences that are not only functional, but also user-focused and performance-driven.
             </p>
         </div>
     );

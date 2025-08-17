@@ -15,7 +15,7 @@ const Home: React.FC = () =>  {
               <div className={"flex items-center gap-5 mt-5"}>
                   <span className={"titillium fs-24 color-eff1c5"}>Fullstack Developer</span>
                   <GoDotFill className={"color-eff1c5"}/>
-                  <span className={"titillium fs-24 color-eff1c5"}>.NET Core & React</span>
+                  <span className={"titillium fs-24 color-eff1c5"}>.NET Core & React.js</span>
               </div>
           </div>
 
