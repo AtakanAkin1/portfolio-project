@@ -21,7 +21,7 @@ const Projects: React.FC = () => {
                     </div>
 
                     <Link
-                        href={process.env.ASSET_MANAGEMENT_GITHUB_REPO ?? "#"}
+                        href={process.env.NEXT_PUBLIC_ASSET_MANAGEMENT_GITHUB_REPO ?? "#"}
                         target="_blank"
                         rel="noopener noreferrer"
                     >

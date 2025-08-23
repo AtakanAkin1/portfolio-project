@@ -5,6 +5,7 @@ import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
 import { toast } from 'react-toastify';
 import { ToastErrorHandler } from "@/components/ToastErrorHandler";
+import  {sendEmail} from "@/app/utils/sendEmail";
 
 const Contact: React.FC = () => {
 
@@ -12,7 +13,7 @@ const Contact: React.FC = () => {
         name: Yup.string()
             .required('Name is required')
             .min(3, 'Name must be at least 3 characters')
-            .max(10, 'Name must be at most 10 characters'),
+            .max(50, 'Name must be at most 50 characters'),
         email: Yup.string().required('Email is required').email('Email is invalid'),
         description: Yup.string().required('Message is required'),
     });
@@ -21,9 +22,7 @@ const Contact: React.FC = () => {
         <Formik
             initialValues={{ name: '', email: '', description: '' }}
             validationSchema={validationSchema}
-            onSubmit={() => {
-                toast.success('Demand submitted!');
-            }}
+            onSubmit={sendEmail}
             validateOnChange
             validateOnBlur={false}
         >
