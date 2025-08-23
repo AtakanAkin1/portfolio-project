@@ -26,8 +26,8 @@ export default function RootLayout({
               rel="stylesheet"/>
           <title>Atakan Akın | Full Stack Developer</title>
       </head>
-      <body className="mx-auto sm:p-10 p-2 min-h-screen flex flex-col">
-      <main className="background rounded-4xl flex-1 sm:p-5 flex flex-col justify-between mb-2 mt-2">
+      <body className="mx-auto p-2 sm:p-4 md:p-6 lg:p-8 xl:p-10 min-h-screen flex flex-col">
+      <main className="background rounded-2xl sm:rounded-3xl md:rounded-4xl flex-1 p-3 sm:p-4 md:p-5 flex flex-col justify-between mb-2 mt-2">
           <MainInfo>
               <ToastContainer position="top-right" autoClose={3000} theme="dark" />
               {children}
@@ -38,8 +38,8 @@ export default function RootLayout({
           />
       </main>
       <nav
-          className="absolute sm:bottom-7 bottom-23 left-1/2 transform -translate-x-1/2 bg-[#3D3D3D]
-          sm:rounded-4xl rounded-full sm:px-13 sm:py-2.5 px-2 py-2">
+          className="absolute bottom-4 sm:bottom-5 md:bottom-6 lg:bottom-7 left-1/2 transform -translate-x-1/2 bg-[#3D3D3D]
+          rounded-full sm:rounded-2xl md:rounded-3xl lg:rounded-4xl px-3 py-2 sm:px-6 sm:py-2.5 md:px-8 md:py-3 lg:px-13">
           <Navigation/>
       </nav>
       </body>

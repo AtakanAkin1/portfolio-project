@@ -37,7 +37,7 @@ const Navigation = () => {
             </div>
 
             {isOpen && (
-                <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 bg-[#3D3D3D] rounded-xl px-6 py-4 sm:hidden z-50">
+                <div className="fixed bottom-16 left-1/2 transform -translate-x-1/2 bg-[#3D3D3D] rounded-xl px-6 py-4 sm:hidden z-50">
                     <ul className="flex flex-col gap-3 items-center text-white orbitronBold fs-20">
                         {menuItems.map((item) => (
                             <li key={item.href}>
