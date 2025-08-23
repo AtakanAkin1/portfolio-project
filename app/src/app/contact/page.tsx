@@ -3,7 +3,6 @@ import React from 'react';
 import Image from 'next/image';
 import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
-import { toast } from 'react-toastify';
 import { ToastErrorHandler } from "@/components/ToastErrorHandler";
 import  {sendEmail} from "@/app/utils/sendEmail";
 

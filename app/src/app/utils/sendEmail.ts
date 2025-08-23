@@ -1,5 +1,6 @@
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
+import { FormikHelpers } from 'formik';
 
 interface EmailValues {
     name: string;
@@ -7,7 +8,7 @@ interface EmailValues {
     description: string;
 }
 
-export const sendEmail = async (values: EmailValues, { resetForm }: any) => {
+export const sendEmail = async (values: EmailValues, { resetForm }: FormikHelpers<EmailValues>) => {
     const valuesWithTime = { ...values, time: new Date().toLocaleString() };
     try {
         await emailjs.send(
